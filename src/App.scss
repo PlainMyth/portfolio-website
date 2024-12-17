@@ -1,4 +1,4 @@
-$primary-color: #ffd700;
+$primary-color: #3B3030;
 
 @import 'animate.css';
 
@@ -16,7 +16,10 @@ $primary-color: #ffd700;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
-
+@font-face {
+  font-family: "Proxima";
+  src: url('./assets/fonts/proximanova_regular.ttf') format('ttf');
+}
 input,
 textarea {
   font-family: 'Coolvetica';
