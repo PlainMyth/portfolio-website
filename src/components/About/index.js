@@ -2,6 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import '../../assets/Resume.pdf'
 import { useState, useEffect } from 'react'
+import Wordle from '../../assets/Wordle.png'
 const About =  () => {
     const [letterClass] = useState('text-animate')
 
@@ -79,14 +80,29 @@ const About =  () => {
                     <h1>
                         Reinforced Learning AI Plays Space Invaders
                     </h1>
-                    <p>Trained a random learning agent to functionally play
+                    <div className = "flex-space">
+                        <p>Trained a random learning agent to functionally play
                         the Atari 2600 game, "Space Invaders" with reasonable
-                        skill and with ease.
+                        skill and with ease. The program used Gymnasium as an
+                        learning environment and Keras to create an API for
+                        reinforcement learning for the agent.
+                    </p>
+                    <h1>
+                        Wordle Game Replica
+                    </h1>
+                    <p>
+                        Created and programmed a backend for the word problem
+                        solving game, "Wordle." The program was entirely created
+                        with C++.
                     </p>
                 </div>
-                <div className = "project-example">
-
                 </div>
+                <div className="project-example">
+                <div className="flex-space">
+                    <video src={require('../../assets/atari-video.mp4')} controls />
+                    <img src={Wordle} alt="Wordle" />
+                </div>
+            </div>
             </div>
     )
 }
